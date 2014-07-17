@@ -6,12 +6,16 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -88,20 +92,17 @@ public class MainActivity extends ActionBarActivity implements ExpenseFragment.O
         //init header details view
         GridView headerDetailsView = (GridView)findViewById(R.id.headerDetailsId);
         ExpenseHeader exp = expenseItemsList.get(0).getExpenseHeader();
-        //List<String> headerDetailsList = exp.getHeaderDetailsList();
-        //headerDetailsView.setAdapter(new HeaderDetailAdapter(this, headerDetailsList));
+        List<String> headerDetailsList = exp.getHeaderDetailsList();
+        headerDetailsView.setAdapter(new HeaderDetailAdapter(this, headerDetailsList));
 
         //init line items view
-        //GridView lineItemDetailsView = (GridView)findViewById(R.id.lineItemsViewId);
-        //headerDetailsView.setAdapter(new HeaderDetailAdapter(this, exp.getLineItems()));
-
         ListView lineItemsView = (ListView) findViewById(R.id.lineItemsViewId);
         //add header
         View lineItemHeaderView = (View)getLayoutInflater().inflate(R.layout.line_item_list_view_header,null);
         lineItemsView.addHeaderView(lineItemHeaderView);
         lineItemsView.setHeaderDividersEnabled(true);
         //populateLineItemsListMap();
-        List<LineItem> lineItemsList = populateLineItemsList(expenseItemsList.get(0).getLineItems());
+        List<LineItem> lineItemsList = expenseItemsList.get(0).getLineItems();//populateLineItemsList(expenseItemsList.get(0).getLineItems());
         //lineItemsView.setAdapter(new LineItemListViewAdapter(this, lineItemsListMap));
         lineItemsView.setAdapter(new LineItemListViewAdapter(this, lineItemsList));
 
@@ -111,18 +112,21 @@ public class MainActivity extends ActionBarActivity implements ExpenseFragment.O
                                     long id) {
                 int itemPostition = position;
                 LineItem lineItem = (LineItem)parent.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), "" + itemPostition + " " + lineItem.getExpenseType(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "Loaded Receipts and Line Items for " + lineItem.getExpenseType(), Toast.LENGTH_SHORT).show();
                 showLineItemDetails(lineItem);
+                showQuestions(lineItem);
                 if(lineItem.isReceiptExists()) {
                     showReceipts(lineItem.getImageIds());
-                } else {
-                    hideReceipts();
                 }
+
+                /*else {
+                    hideReceipts();
+                }*/
             }
         });
     }
 
-    private List<LineItem> populateLineItemsList(List<LineItem> lineItemsList) {
+    /*private List<LineItem> populateLineItemsList(List<LineItem> lineItemsList) {
         if(lineItemsList == null || lineItemsList.size() == 0) {
             //create temp data
             lineItemsList = new ArrayList<LineItem>(4);
@@ -145,12 +149,29 @@ public class MainActivity extends ActionBarActivity implements ExpenseFragment.O
         }
 
         return lineItemsList;
-    }
+    }*/
 
     //init line item details view
     private void showLineItemDetails(LineItem lineItem) {
-        GridView lineItemDetailsView = (GridView)findViewById(R.id.lineItemDetailsViewId);
-        //lineItemDetailsView.setAdapter(new LineItemDetailAdapter(this, lineItem));
+        //LinearLayout lineItemDetailsView = (LinearLayout)findViewById(R.id.lineItemDetailsViewId);
+
+        TextView hdrTxt = ((TextView) findViewById(R.id.lineItemDetailsHdrId));
+        //init line items view
+        if(lineItem.getLineItemDetailList() != null && lineItem.getLineItemDetailList().size() > 0) {
+            hdrTxt.setVisibility(View.VISIBLE);
+            hdrTxt.setText(lineItem.getExpenseType() + " - Line Item Details");
+            GridView lineItemDetailsView = (GridView) findViewById(R.id.lineItemDetailsViewId);
+            lineItemDetailsView.setAdapter(new LineItemDetailAdapter(this, lineItem.getLineItemDetailList()));
+        } else {
+            hdrTxt.setVisibility(View.GONE);
+        }
+    }
+
+    private void showQuestions(LineItem lineItem) {
+        if(lineItem.getQuestions() != null && lineItem.getQuestions().size() > 0) {
+            GridView questionsView = (GridView) findViewById(R.id.questionViewId);
+            questionsView.setAdapter(new QuestionItemAdapter(this, lineItem.getQuestions()));
+        }
     }
 
     private void showReceipts(List<String> imageNames) {

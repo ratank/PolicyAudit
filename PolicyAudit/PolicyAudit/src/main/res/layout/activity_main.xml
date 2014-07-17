@@ -54,24 +54,32 @@
             <ListView
                 android:id="@+id/lineItemsViewId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="10dp">
             </ListView>
 
             <!-- Line Item Details -->
+            <TextView
+                android:id="@+id/lineItemDetailsHdrId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Line Item Details"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:visibility="gone"/>
             <GridView
                 android:id="@+id/lineItemDetailsViewId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:numColumns="auto_fit"
-                android:verticalSpacing="5dp"
-                android:horizontalSpacing="5dp"
+                android:verticalSpacing="0dp"
+                android:horizontalSpacing="0dp"
                 android:stretchMode="columnWidth"
                 android:gravity="center"/>
-
             <GridView
                 android:id="@+id/questionViewId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"                >
             </GridView>
 
         </LinearLayout>

@@ -1,5 +1,6 @@
 package concur.hack.policyaudit.activity;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -20,6 +21,7 @@ public class LineItem {
     private double exchangeRate;
     private boolean ReceiptExists;
     private List<Question> questions;
+    private List<String> lineItemDetailList;
 
     public List<Question> getQuestions() {
         return questions;
@@ -123,5 +125,23 @@ public class LineItem {
 
     public void setReceiptExists(boolean receiptExists) {
         ReceiptExists = receiptExists;
+    }
+
+    //needed for the UI display
+    public List<String> getLineItemDetailList() {
+        List<String> lineItemDetailList = new ArrayList<String>();
+
+        //lineItemDetailList.add("Expense Type|"+expenseType);
+        //lineItemDetailList.add("Transaction Date|"+transactionDate);
+        lineItemDetailList.add("Business Purpose|"+businessPurpose);
+        lineItemDetailList.add("Requested Amount|"+requestedAmount);
+        lineItemDetailList.add("Vendor Description|"+vendorDescription);
+        lineItemDetailList.add("City|"+city);
+        lineItemDetailList.add("Currency|"+currency);
+        lineItemDetailList.add("Payment Type|"+paymentType);
+        lineItemDetailList.add("Status|"+status);
+        lineItemDetailList.add("Exchange Rate|"+exchangeRate);
+
+        return lineItemDetailList;
     }
 }

@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="C:\MyProjects\PolicyAudit" />
-            <option value="C:\MyProjects\PolicyAudit\PolicyAudit" />
+            <option value="C:\Git\PolicyAudit\PolicyAudit" />
+            <option value="C:\Git\PolicyAudit\PolicyAudit\PolicyAudit" />
           </set>
         </option>
       </GradleProjectSettings>

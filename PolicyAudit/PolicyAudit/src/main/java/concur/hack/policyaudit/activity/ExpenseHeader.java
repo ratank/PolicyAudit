@@ -1,5 +1,6 @@
 package concur.hack.policyaudit.activity;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,6 +15,8 @@ public class ExpenseHeader {
     private String companyName;
     private String employeeName;
     private String expenseName;
+    private List<String> headerDetailsList;
+
 
     public String getExpenseId() {
         return expenseId;
@@ -61,5 +64,18 @@ public class ExpenseHeader {
 
     public void setExpenseName(String expenseName) {
         this.expenseName = expenseName;
+    }
+
+    //needed for the UI display
+    public List<String> getHeaderDetailsList() {
+        List<String> headerDetailsList = new ArrayList<String>();
+        //headerDetailsList.add("Expense Id|"+expenseId);
+        headerDetailsList.add("Transaction Date|"+transactionDate);
+        headerDetailsList.add("Total Posted Amount|"+totalPostedAmount);
+        headerDetailsList.add("Company Name|"+companyName);
+        headerDetailsList.add("Employee Name|"+employeeName);
+        headerDetailsList.add("Expense Name|"+expenseName);
+
+        return headerDetailsList;
     }
 }
