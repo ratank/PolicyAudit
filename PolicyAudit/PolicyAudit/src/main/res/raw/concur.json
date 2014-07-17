@@ -1,0 +1,4189 @@
+{
+	"Index": 1,
+	"ReportAudit": {
+		"ServiceWorkbenchController_GetNextAuditAction": {
+			"ReportId": "nuwF6znuIdyEHowUC2kmX27w$s",
+			"EntityCode": "phos123488",
+			"AuditData": {
+				"ENTITY_CODE": "phos123488",
+				"ENTITY_NAME": "Hosted Inc.",
+				"MESSAGE_TYPE": "IN_FROM_CTE",
+				"QUEUE_NAME": "FORRTE",
+				"ENTITY_AUDIT_TYPE": "STANDARD",
+				"RPT_KEY": "11",
+				"RPT_ID": "0A1A7FE61BC24F29A152",
+				"AP_KEY": "A_PEND",
+				"EMP_KEY": 133,
+				"EMP_FULL_NAME": "Sam1 EUser1_1311",
+				"EMP_LANG_CODE": "en",
+				"RANDOM_NO": 0.052982149488773667,
+				"AUDIT_START_DATE": "2014-07-09",
+				"QueueLog": [{
+					"QueueName": "FORRTE",
+					"Enqueue": "2014-Jul-09 09:17:48",
+					"Source": "SYSTEM",
+					"PostSubmitReview": "N",
+					"QueueReviewPercentage": 0,
+					"Dequeue": "2014-Jul-09 09:17:48"
+				},
+				{
+					"QueueName": "DAVE1 ",
+					"Enqueue": "2014-Jul-09 09:17:50",
+					"Source": "SYSTEM",
+					"SLA": 4320,
+					"PostSubmitReview": "Y",
+					"QueueReviewPercentage": 0,
+					"TaskType": "IN_FROM_CTE",
+					"Dequeue": "2014-Jul-16 13:46:00"
+				}],
+				"PROCESS_INSTANCE_KEY": 108,
+				"NativeAuditProfile": {
+					"LangCode": "en",
+					"ExpressionKey": 64,
+					"Questions": [{
+						"id": 62,
+						"question": "Is the receipt date, expense type and country of purchase correct?",
+						"control": "DROP",
+						"sequenceNumber": 1,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "DCPR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date & Country of Purchase incorrect",
+							"comment": "The date of the receipt,  and the country/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "DTEI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date and Expense Type incorrect",
+							"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "DTNM",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date does not match",
+							"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%"
+						},
+						{
+							"answerId": "EXIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Expense Type incorrect",
+							"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 5
+							}]
+						},
+						{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "MRCT",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Multiple Receipts Attached",
+							"comment": "Multiple receipts are not acceptable. Please attach just one receipt per line item and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCPI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Country of Purchase incorrect",
+							"comment": "The country/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NDEI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date and Expense Type and Country are incorrect",
+							"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NETC",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Expense Type & Country of purchase incorrect",
+							"comment": "The expense type claimed and the country /location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NORT",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No Receipt",
+							"comment": "A supporting receipt/Invoice has not been provided. Please provide a receipt for this expense or correct the receipt status and add a comment for the un-receipted claim. %expensetype% for %expenseamount% ,%expensedate% ",
+							"reasonCodes": [{
+								"ReasonCodeKey": 1
+							}]
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "URNC",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Un-receipted no comment",
+							"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							},
+							{
+								"ReasonCodeKey": 16
+							}]
+						},
+						{
+							"answerId": "URWC",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Un-receipted with comment"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 65,
+						"question": "Is the Customer Name, Customer Address and a receipt ref/invoice number shown on the receipt?",
+						"control": "DROP",
+						"sequenceNumber": 4,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961
+					},
+					{
+						"id": 67,
+						"question": "Is the receipt type  correct?",
+						"control": "FILD",
+						"sequenceNumber": 6,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3762
+					},
+					{
+						"id": 68,
+						"question": "Is the claim currency correct?",
+						"control": "DROP",
+						"sequenceNumber": 7,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 74,
+						"question": "Does the Receipt Tax value cover the system calculated Tax value?",
+						"control": "DROP",
+						"sequenceNumber": 8,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NRVD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Restaurant meal and the Tax amount is not displayed on the receipt"
+						},
+						{
+							"answerId": "NSVD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Supermarket receipt and the Tax amount is not displayed on the receipt"
+						},
+						{
+							"answerId": "NVAD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Different Tax amount is displayed on the receipt"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 69,
+						"question": "Is the Tax amount calculated by the system supported by the receipt?",
+						"control": "FILD",
+						"sequenceNumber": 9,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3933
+					},
+					{
+						"id": 70,
+						"question": "Has the correct hire duration been selected?",
+						"control": "DROP",
+						"sequenceNumber": 10,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The hire duration selection does not agree to the hire information provided on the receipt.  Please correct the hire duration and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "UTVL",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Unable to validate"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 71,
+						"question": "Does the amount of Tax on the receipt match or exceed the Tax amount calculated by the system?",
+						"control": "FILD",
+						"sequenceNumber": 11,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3933,
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 72,
+						"question": "Has the correct fuel receipt been selected?",
+						"control": "DROP",
+						"sequenceNumber": 12,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The fuel receipt you have provided does not agree to the receipt fuel type. Please either provide the correct fuel type receipt to support this claim or change the receipt status to 'No receipt'. for %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 171,
+						"question": "Is the fuel type correct?",
+						"control": "FILD",
+						"sequenceNumber": 14,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3816
+					}]
+				},
+				"Header": [{
+					"EmpKey": "nlqhpVyCkG$sXRzVwxcX1$pDB$ph2A",
+					"EmpFullName": "Sam1 EUser1_1311",
+					"PolKey": 2,
+					"ReportDate": "2014-06-26",
+					"CrnKey": 3,
+					"RptKey": "nuwF6znuIdyEHowUC2kmX27w$s",
+					"Name": "For Demo a1",
+					"ReportId": "nunEunfGN692QAWqp5QUnh9DFmOKvXVZYzDolJsgIO1EAQk3X",
+					"ReportIdForDisplay": "0A1A7FE61BC24F29A152",
+					"TotalPostedAmount": "148.00000000",
+					"TotalClaimedAmount": "148.00000000",
+					"CurrentWorkflow": 108,
+					"FormKey": 2,
+					"HasComments": "N",
+					"IsSplitable": true,
+					"Questions": [],
+					"ReportDetails": {
+						"EmpKey": "nlqhpVyCkG$sXRzVwxcX1$pDB$ph2A",
+						"EmpFullName": "Sam1 EUser1_1311",
+						"PolKey": 2,
+						"ReportDate": "2014-06-26",
+						"CrnKey": 3,
+						"RptKey": "nuwF6znuIdyEHowUC2kmX27w$s",
+						"Name": "For Demo a1",
+						"ReportId": "nunEunfGN692QAWqp5QUnh9DFmOKvXVZYzDolJsgIO1EAQk3X",
+						"ReportIdForDisplay": "0A1A7FE61BC24F29A152",
+						"TotalPostedAmount": "148.00000000",
+						"TotalClaimedAmount": "148.00000000",
+						"IsLocked": false,
+						"IsInReview": false,
+						"AuditStartDate": "2014-07-09",
+						"AuditorCUUID": "",
+						"AuditorName": "",
+						"AuditorReviewPercentage": ""
+					},
+					"EntityDetails": {
+						"EntityCode": "phos123488",
+						"EntityName": "Hosted Inc."
+					}
+				}],
+				"LineItem": [{
+					"ApprovedAmount": "35.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Dinner",
+					"ExpKey": "DINNR",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nz364ye9lPHSC2mEbhyMerwuJ",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-06-19",
+					"RequestAmountPosted": "35.00000000",
+					"RequestAmountTransaction": "35.00000000",
+					"ImageID": "receipt1.jpg,receipt2.jpg,receipt3.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [{
+						"id": 62,
+						"question": "Is the receipt date, expense type and country of purchase correct?",
+						"control": "DROP",
+						"sequenceNumber": 1,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "DCPR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date & Country of Purchase incorrect",
+							"comment": "The date of the receipt,  and the country/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "DTEI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date and Expense Type incorrect",
+							"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "DTNM",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date does not match",
+							"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%"
+						},
+						{
+							"answerId": "EXIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Expense Type incorrect",
+							"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 5
+							}]
+						},
+						{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "MRCT",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Multiple Receipts Attached",
+							"comment": "Multiple receipts are not acceptable. Please attach just one receipt per line item and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCPI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Country of Purchase incorrect",
+							"comment": "The country/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NDEI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date and Expense Type and Country are incorrect",
+							"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NETC",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Expense Type & Country of purchase incorrect",
+							"comment": "The expense type claimed and the country /location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NORT",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No Receipt",
+							"comment": "A supporting receipt/Invoice has not been provided. Please provide a receipt for this expense or correct the receipt status and add a comment for the un-receipted claim. %expensetype% for %expenseamount% ,%expensedate% ",
+							"reasonCodes": [{
+								"ReasonCodeKey": 1
+							}]
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "URNC",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Un-receipted no comment",
+							"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							},
+							{
+								"ReasonCodeKey": 16
+							}]
+						},
+						{
+							"answerId": "URWC",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Un-receipted with comment"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					{
+						"id": 67,
+						"question": "Is the receipt type  correct?",
+						"control": "FILD",
+						"sequenceNumber": 6,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3762,
+						"EditFieldInfo": {
+							"Id": "ReceiptType",
+							"CtrlType": "picklist",
+							"DataType": "CHAR",
+							"IsCustom": false,
+							"IsList": false,
+							"Label": "Receipt Status",
+							"dataStoreFields": [{
+								"name": "controlcode"
+							},
+							{
+								"name": "controlname"
+							}],
+							"dataStoreData": [["N",
+							"No Receipt"],
+							["R",
+							"Receipt"],
+							["T",
+							"Tax Receipt"]],
+							"valueField": "controlcode",
+							"displayField": "controlname"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY"
+					},
+					{
+						"id": 68,
+						"question": "Is the claim currency correct?",
+						"control": "DROP",
+						"sequenceNumber": 7,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 74,
+						"question": "Does the Receipt Tax value cover the system calculated Tax value?",
+						"control": "DROP",
+						"sequenceNumber": 8,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NRVD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Restaurant meal and the Tax amount is not displayed on the receipt"
+						},
+						{
+							"answerId": "NSVD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Supermarket receipt and the Tax amount is not displayed on the receipt"
+						},
+						{
+							"answerId": "NVAD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Different Tax amount is displayed on the receipt"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 69,
+						"question": "Is the Tax amount calculated by the system supported by the receipt?",
+						"control": "FILD",
+						"sequenceNumber": 9,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3933,
+						"EditFieldInfo": {
+							"Id": "TaxTransactionAmount",
+							"CtrlType": "edit",
+							"DataType": "MONEY",
+							"Label": "TaxTransactionAmount"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX"
+					},
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				},
+				{
+					"ApprovedAmount": "57.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Dinner",
+					"ExpKey": "DINNR",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nznqTLw2h83aCnakEbMwHm17p",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-07-07",
+					"RequestAmountPosted": "57.00000000",
+					"RequestAmountTransaction": "57.00000000",
+					"ImageID": "receipt2.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [{
+						"id": 62,
+						"question": "Is the receipt date, expense type and country of purchase correct?",
+						"control": "DROP",
+						"sequenceNumber": 1,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "DCPR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date & Country of Purchase incorrect",
+							"comment": "The date of the receipt,  and the country/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "DTEI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date and Expense Type incorrect",
+							"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "DTNM",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date does not match",
+							"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%"
+						},
+						{
+							"answerId": "EXIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Expense Type incorrect",
+							"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 5
+							}]
+						},
+						{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "MRCT",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Multiple Receipts Attached",
+							"comment": "Multiple receipts are not acceptable. Please attach just one receipt per line item and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCPI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Country of Purchase incorrect",
+							"comment": "The country/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NDEI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date and Expense Type and Country are incorrect",
+							"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NETC",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Expense Type & Country of purchase incorrect",
+							"comment": "The expense type claimed and the country /location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NORT",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No Receipt",
+							"comment": "A supporting receipt/Invoice has not been provided. Please provide a receipt for this expense or correct the receipt status and add a comment for the un-receipted claim. %expensetype% for %expenseamount% ,%expensedate% ",
+							"reasonCodes": [{
+								"ReasonCodeKey": 1
+							}]
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "URNC",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Un-receipted no comment",
+							"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							},
+							{
+								"ReasonCodeKey": 16
+							}]
+						},
+						{
+							"answerId": "URWC",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Un-receipted with comment"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					{
+						"id": 67,
+						"question": "Is the receipt type  correct?",
+						"control": "FILD",
+						"sequenceNumber": 6,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3762,
+						"EditFieldInfo": {
+							"Id": "ReceiptType",
+							"CtrlType": "picklist",
+							"DataType": "CHAR",
+							"IsCustom": false,
+							"IsList": false,
+							"Label": "Receipt Status",
+							"dataStoreFields": [{
+								"name": "controlcode"
+							},
+							{
+								"name": "controlname"
+							}],
+							"dataStoreData": [["N",
+							"No Receipt"],
+							["R",
+							"Receipt"],
+							["T",
+							"Tax Receipt"]],
+							"valueField": "controlcode",
+							"displayField": "controlname"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY"
+					},
+					{
+						"id": 68,
+						"question": "Is the claim currency correct?",
+						"control": "DROP",
+						"sequenceNumber": 7,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 74,
+						"question": "Does the Receipt Tax value cover the system calculated Tax value?",
+						"control": "DROP",
+						"sequenceNumber": 8,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NRVD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Restaurant meal and the Tax amount is not displayed on the receipt"
+						},
+						{
+							"answerId": "NSVD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Supermarket receipt and the Tax amount is not displayed on the receipt"
+						},
+						{
+							"answerId": "NVAD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Different Tax amount is displayed on the receipt"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 69,
+						"question": "Is the Tax amount calculated by the system supported by the receipt?",
+						"control": "FILD",
+						"sequenceNumber": 9,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3933,
+						"EditFieldInfo": {
+							"Id": "TaxTransactionAmount",
+							"CtrlType": "edit",
+							"DataType": "MONEY",
+							"Label": "TaxTransactionAmount"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX"
+					},
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				},
+				{
+					"ApprovedAmount": "56.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Individual Meals",
+					"ExpKey": "MEALI",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nzntmUmIyhjYvMKu3klRrhgAj",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-07-07",
+					"RequestAmountPosted": "56.00000000",
+					"RequestAmountTransaction": "56.00000000",
+					"ImageID": "receipt4.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [{
+						"id": 62,
+						"question": "Is the receipt date, expense type and country of purchase correct?",
+						"control": "DROP",
+						"sequenceNumber": 1,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "DCPR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date & Country of Purchase incorrect",
+							"comment": "The date of the receipt,  and the country/ location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "DTEI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date and Expense Type incorrect",
+							"comment": "The date of the receipt and the expense type claimed do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "DTNM",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date does not match",
+							"comment": "The date of the receipt does not match the date of the expense claim. Please correct the date discrepancy and resubmit. %expensetype% for %expenseamount%, %expensedate%"
+						},
+						{
+							"answerId": "EXIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Expense Type incorrect",
+							"comment": "The expense type claimed does not match the receipt details. Please choose the correct expense type and resubmit the report. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 5
+							}]
+						},
+						{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "MRCT",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Multiple Receipts Attached",
+							"comment": "Multiple receipts are not acceptable. Please attach just one receipt per line item and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCPI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Country of Purchase incorrect",
+							"comment": "The country/location of purchase selected does not agree to the receipt provided to support the claim. Please amend the Country of purchase and resubmit this claim. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NDEI",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Date and Expense Type and Country are incorrect",
+							"comment": "The date of the receipt,  the expense type claimed and the country location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NETC",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Expense Type & Country of purchase incorrect",
+							"comment": "The expense type claimed and the country /location of purchase, do not match the details of the receipt provided.   Please correct these discrepancies and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NORT",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No Receipt",
+							"comment": "A supporting receipt/Invoice has not been provided. Please provide a receipt for this expense or correct the receipt status and add a comment for the un-receipted claim. %expensetype% for %expenseamount% ,%expensedate% ",
+							"reasonCodes": [{
+								"ReasonCodeKey": 1
+							}]
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "URNC",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Un-receipted no comment",
+							"comment": "Un-receipted expenses require a comment. Enter an explanatory comment and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							},
+							{
+								"ReasonCodeKey": 16
+							}]
+						},
+						{
+							"answerId": "URWC",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Un-receipted with comment"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier name, supplier Address and a description of the goods & services purchased?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					{
+						"id": 67,
+						"question": "Is the receipt type  correct?",
+						"control": "FILD",
+						"sequenceNumber": 6,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3762,
+						"EditFieldInfo": {
+							"Id": "ReceiptType",
+							"CtrlType": "picklist",
+							"DataType": "CHAR",
+							"IsCustom": false,
+							"IsList": false,
+							"Label": "Receipt Status",
+							"dataStoreFields": [{
+								"name": "controlcode"
+							},
+							{
+								"name": "controlname"
+							}],
+							"dataStoreData": [["N",
+							"No Receipt"],
+							["R",
+							"Receipt"],
+							["T",
+							"Tax Receipt"]],
+							"valueField": "controlcode",
+							"displayField": "controlname"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY"
+					},
+					{
+						"id": 68,
+						"question": "Is the claim currency correct?",
+						"control": "DROP",
+						"sequenceNumber": 7,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Information missing - Unable to Validate"
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The receipt currency does not match the currency of the expense claimed. Please correct the currency or provide the correct receipt.  If the correct receipt is lost please correct the receipt status to 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 74,
+						"question": "Does the Receipt Tax value cover the system calculated Tax value?",
+						"control": "DROP",
+						"sequenceNumber": 8,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NRVD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Restaurant meal and the Tax amount is not displayed on the receipt"
+						},
+						{
+							"answerId": "NSVD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Supermarket receipt and the Tax amount is not displayed on the receipt"
+						},
+						{
+							"answerId": "NVAD",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Different Tax amount is displayed on the receipt"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 69,
+						"question": "Is the Tax amount calculated by the system supported by the receipt?",
+						"control": "FILD",
+						"sequenceNumber": 9,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3933,
+						"EditFieldInfo": {
+							"Id": "TaxTransactionAmount",
+							"CtrlType": "edit",
+							"DataType": "MONEY",
+							"Label": "TaxTransactionAmount"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX"
+					},
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				}],
+				"RuleLog": [{
+					"Rule": 2000001,
+					"Execution": "2014-Jul-09 09:17:50"
+				}]
+			},
+			"AuditCompleteDate": "2014-07-09 09:17:50.0",
+			"IsLocked": false,
+			"AuditorCUUID": "-1"
+		}
+	},
+	"ExpenseType": {
+		"ExpenseTypes": {
+			"TRAVL": {
+				"ExpKey": "TRAVL",
+				"Name": "01. Travel"
+			},
+			"TRANS": {
+				"ExpKey": "TRANS",
+				"Name": "02. Transportation"
+			},
+			"MLENT": {
+				"ExpKey": "MLENT",
+				"Name": "03. Meals and Entertainment"
+			},
+			"OFFIC": {
+				"ExpKey": "OFFIC",
+				"Name": "04. Office Expenses"
+			},
+			"COMMU": {
+				"ExpKey": "COMMU",
+				"Name": "05. Communications"
+			},
+			"FEESX": {
+				"ExpKey": "FEESX",
+				"Name": "06. Fees"
+			},
+			"OTHER": {
+				"ExpKey": "OTHER",
+				"Name": "07. Other"
+			},
+			"RELOX": {
+				"ExpKey": "RELOX",
+				"Name": "08. Relocation/Ex-Pat"
+			},
+			"CSHAD": {
+				"ExpKey": "CSHAD",
+				"Name": "09. Cash Advance"
+			},
+			"TAGFE": {
+				"ExpKey": "TAGFE",
+				"Name": "Agency Booking Fees"
+			},
+			"AIRFC": {
+				"ExpKey": "AIRFC",
+				"Name": "Air Fare"
+			},
+			"AIRFR": {
+				"ExpKey": "AIRFR",
+				"Name": "Airfare"
+			},
+			"AIRTX": {
+				"ExpKey": "AIRTX",
+				"Name": "Airfare Ticket Tax"
+			},
+			"AIRFE": {
+				"ExpKey": "AIRFE",
+				"Name": "Airline Fees"
+			},
+			"ALCBV": {
+				"ExpKey": "ALCBV",
+				"Name": "Alcoholic Beverages"
+			},
+			"ALCSD": {
+				"ExpKey": "ALCSD",
+				"Name": "Alcoholic Beverages & Soft Drinks"
+			},
+			"BANKF": {
+				"ExpKey": "BANKF",
+				"Name": "Bank Fees"
+			},
+			"BRKFT": {
+				"ExpKey": "BRKFT",
+				"Name": "Breakfast"
+			},
+			"BUSXX": {
+				"ExpKey": "BUSXX",
+				"Name": "Bus"
+			},
+			"BUSCL": {
+				"ExpKey": "BUSCL",
+				"Name": "Business Calls"
+			},
+			"BUSML": {
+				"ExpKey": "BUSML",
+				"Name": "Business Meals (Attendees)"
+			},
+			"CARMT": {
+				"ExpKey": "CARMT",
+				"Name": "Car Maintenance/Repairs"
+			},
+			"CARRT": {
+				"ExpKey": "CARRT",
+				"Name": "Car Rental"
+			},
+			"CARTI": {
+				"ExpKey": "CARTI",
+				"Name": "Car Rental - Insurance"
+			},
+			"CSHRN": {
+				"ExpKey": "CSHRN",
+				"Name": "Cash Advance Return"
+			},
+			"CARMI": {
+				"ExpKey": "CARMI",
+				"Name": "Company Car Mileage"
+			},
+			"SHIPG": {
+				"ExpKey": "SHIPG",
+				"Name": "Courier/Shipping/Freight"
+			},
+			"CUREF": {
+				"ExpKey": "CUREF",
+				"Name": "Currency Exchange Fees"
+			},
+			"CURGL": {
+				"ExpKey": "CURGL",
+				"Name": "Currency Gain/Loss"
+			},
+			"DINNR": {
+				"ExpKey": "DINNR",
+				"Name": "Dinner"
+			},
+			"ENTBR": {
+				"ExpKey": "ENTBR",
+				"Name": "Entertainment - Breakfast/Simple Meals"
+			},
+			"ENTCL": {
+				"ExpKey": "ENTCL",
+				"Name": "Entertainment - Client"
+			},
+			"ENTEV": {
+				"ExpKey": "ENTEV",
+				"Name": "Entertainment - Events/Shows"
+			},
+			"ENTXD": {
+				"ExpKey": "ENTXD",
+				"Name": "Entertainment - External (Domestic)"
+			},
+			"ENTXF": {
+				"ExpKey": "ENTXF",
+				"Name": "Entertainment - External (Foreign)"
+			},
+			"ENTLD": {
+				"ExpKey": "ENTLD",
+				"Name": "Entertainment - Lunch/Dinner"
+			},
+			"ENTST": {
+				"ExpKey": "ENTST",
+				"Name": "Entertainment - Staff"
+			},
+			"ENTSD": {
+				"ExpKey": "ENTSD",
+				"Name": "Entertainment - Staff (Directors only)"
+			},
+			"ENTSC": {
+				"ExpKey": "ENTSC",
+				"Name": "Entertainment - Staff (With Clients)"
+			},
+			"EXPAT": {
+				"ExpKey": "EXPAT",
+				"Name": "Ex Pat Expenses"
+			},
+			"FXLDG": {
+				"ExpKey": "FXLDG",
+				"Name": "Fixed Lodging"
+			},
+			"FXMLS": {
+				"ExpKey": "FXMLS",
+				"Name": "Fixed Meals"
+			},
+			"FXMLG": {
+				"ExpKey": "FXMLG",
+				"Name": "Fixed Meals (gross)"
+			},
+			"FFAMA": {
+				"ExpKey": "FFAMA",
+				"Name": "Friends & Family Allowance"
+			},
+			"GASXX": {
+				"ExpKey": "GASXX",
+				"Name": "Fuel"
+			},
+			"MFUEL": {
+				"ExpKey": "MFUEL",
+				"Name": "Fuel For Mileage"
+			},
+			"GFTCL": {
+				"ExpKey": "GFTCL",
+				"Name": "Gifts - Clients"
+			},
+			"GFTCD": {
+				"ExpKey": "GFTCD",
+				"Name": "Gifts - Clients (Deductible)"
+			},
+			"GFTST": {
+				"ExpKey": "GFTST",
+				"Name": "Gifts - Staff"
+			},
+			"GFTA1": {
+				"ExpKey": "GFTA1",
+				"Name": "Gifts <= $AUD300"
+			},
+			"GFTE1": {
+				"ExpKey": "GFTE1",
+				"Name": "Gifts <= 35�"
+			},
+			"GFTA2": {
+				"ExpKey": "GFTA2",
+				"Name": "Gifts > $AUD300"
+			},
+			"GFTE2": {
+				"ExpKey": "GFTE2",
+				"Name": "Gifts > 35�"
+			},
+			"GSTHS": {
+				"ExpKey": "GSTHS",
+				"Name": "GST/HST"
+			},
+			"LODNG": {
+				"ExpKey": "LODNG",
+				"Name": "Hotel"
+			},
+			"LODTX": {
+				"ExpKey": "LODTX",
+				"Name": "Hotel Tax"
+			},
+			"INCTS": {
+				"ExpKey": "INCTS",
+				"Name": "Incidentals"
+			},
+			"INCTA": {
+				"ExpKey": "INCTA",
+				"Name": "Incidentals Allowance"
+			},
+			"MEALI": {
+				"ExpKey": "MEALI",
+				"Name": "Individual Meals"
+			},
+			"MEALM": {
+				"ExpKey": "MEALM",
+				"Name": "Individual Meals - Within Municipality"
+			},
+			"ROOME": {
+				"ExpKey": "ROOME",
+				"Name": "In-Room Entertainment"
+			},
+			"ONLIN": {
+				"ExpKey": "ONLIN",
+				"Name": "Internet/Online Fees"
+			},
+			"JTRAN": {
+				"ExpKey": "JTRAN",
+				"Name": "Japan Public Transportation"
+			},
+			"LNDRY": {
+				"ExpKey": "LNDRY",
+				"Name": "Laundry"
+			},
+			"LUNCH": {
+				"ExpKey": "LUNCH",
+				"Name": "Lunch"
+			},
+			"MRKPR": {
+				"ExpKey": "MRKPR",
+				"Name": "Marketing/Promotional Costs"
+			},
+			"MEALT": {
+				"ExpKey": "MEALT",
+				"Name": "Meals (Employee Travelling)"
+			},
+			"MDFEE": {
+				"ExpKey": "MDFEE",
+				"Name": "Medical Fees"
+			},
+			"MISCL": {
+				"ExpKey": "MISCL",
+				"Name": "Miscellaneous"
+			},
+			"CELPH": {
+				"ExpKey": "CELPH",
+				"Name": "Mobile/Cellular Phone"
+			},
+			"NEWSP": {
+				"ExpKey": "NEWSP",
+				"Name": "Newspapers/Books/Magazines"
+			},
+			"PRSNL": {
+				"ExpKey": "PRSNL",
+				"Name": "Non Reimbursable/Personal Expense"
+			},
+			"NBUSC": {
+				"ExpKey": "NBUSC",
+				"Name": "Non-Business Calls"
+			},
+			"OFFEQ": {
+				"ExpKey": "OFFEQ",
+				"Name": "Office Equipment/Hardware"
+			},
+			"OFCSP": {
+				"ExpKey": "OFCSP",
+				"Name": "Office Supplies/Software"
+			},
+			"OVRNT": {
+				"ExpKey": "OVRNT",
+				"Name": "Overnight"
+			},
+			"PARKG": {
+				"ExpKey": "PARKG",
+				"Name": "Parking"
+			},
+			"PFEES": {
+				"ExpKey": "PFEES",
+				"Name": "Passport/Visa Fees"
+			},
+			"MILEG": {
+				"ExpKey": "MILEG",
+				"Name": "Personal Car Mileage"
+			},
+			"POSTG": {
+				"ExpKey": "POSTG",
+				"Name": "Postage"
+			},
+			"PRNTG": {
+				"ExpKey": "PRNTG",
+				"Name": "Printing/Photocopying/Stationery"
+			},
+			"PROFS": {
+				"ExpKey": "PROFS",
+				"Name": "Professional Subscriptions/Dues"
+			},
+			"PVMLS": {
+				"ExpKey": "PVMLS",
+				"Name": "Provided Meals"
+			},
+			"PTRAN": {
+				"ExpKey": "PTRAN",
+				"Name": "Public Transport"
+			},
+			"QSTCA": {
+				"ExpKey": "QSTCA",
+				"Name": "QST/PST"
+			},
+			"RELOC": {
+				"ExpKey": "RELOC",
+				"Name": "Relocation Expenses"
+			},
+			"SFEES": {
+				"ExpKey": "SFEES",
+				"Name": "Seminar/Course Fees"
+			},
+			"SNACK": {
+				"ExpKey": "SNACK",
+				"Name": "Snacks/Beverages"
+			},
+			"AWRST": {
+				"ExpKey": "AWRST",
+				"Name": "Staff Awards/Incentives"
+			},
+			"STENT": {
+				"ExpKey": "STENT",
+				"Name": "Staff Recreation (no food/drinks)"
+			},
+			"SUBWY": {
+				"ExpKey": "SUBWY",
+				"Name": "Subway"
+			},
+			"TXMLS": {
+				"ExpKey": "TXMLS",
+				"Name": "Taxable Meals"
+			},
+			"TAXIX": {
+				"ExpKey": "TAXIX",
+				"Name": "Taxi"
+			},
+			"TELFX": {
+				"ExpKey": "TELFX",
+				"Name": "Telephone/Fax"
+			},
+			"TIPSX": {
+				"ExpKey": "TIPSX",
+				"Name": "Tips/Gratuities"
+			},
+			"TOLLS": {
+				"ExpKey": "TOLLS",
+				"Name": "Tolls/Road Charges"
+			},
+			"TRAIN": {
+				"ExpKey": "TRAIN",
+				"Name": "Train"
+			},
+			"TUITR": {
+				"ExpKey": "TUITR",
+				"Name": "Tuition/Training Reimbursement"
+			},
+			"UNDEF": {
+				"ExpKey": "UNDEF",
+				"Name": "Undefined"
+			},
+			"UNDID": {
+				"ExpKey": "UNDID",
+				"Name": "Undocumented Incidentals - Domestic"
+			},
+			"UNDII": {
+				"ExpKey": "UNDII",
+				"Name": "Undocumented Incidentals - International"
+			},
+			"UNIFM": {
+				"ExpKey": "UNIFM",
+				"Name": "Uniforms"
+			}
+		}
+	},
+	"EMP_KEY": {
+		"EmpKey": "37"
+	},
+	"Countries": {
+		"Records": [{
+			"CtryCode": "AF",
+			"CtryName": "AFGHANISTAN",
+			"CrnCode": "AFN"
+		},
+		{
+			"CtryCode": "AX",
+			"CtryName": "�LAND ISLANDS",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "AL",
+			"CtryName": "ALBANIA",
+			"CrnCode": "ALL"
+		},
+		{
+			"CtryCode": "DZ",
+			"CtryName": "ALGERIA",
+			"CrnCode": "DZD"
+		},
+		{
+			"CtryCode": "AS",
+			"CtryName": "AMERICAN SAMOA",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "AD",
+			"CtryName": "ANDORRA",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "AO",
+			"CtryName": "ANGOLA",
+			"CrnCode": "AOA"
+		},
+		{
+			"CtryCode": "AI",
+			"CtryName": "ANGUILLA",
+			"CrnCode": "XCD"
+		},
+		{
+			"CtryCode": "AQ",
+			"CtryName": "ANTARCTICA",
+			"CrnCode": ""
+		},
+		{
+			"CtryCode": "AG",
+			"CtryName": "ANTIGUA AND BARBUDA",
+			"CrnCode": "XCD"
+		},
+		{
+			"CtryCode": "AR",
+			"CtryName": "ARGENTINA",
+			"CrnCode": "ARS"
+		},
+		{
+			"CtryCode": "AM",
+			"CtryName": "ARMENIA",
+			"CrnCode": "AMD"
+		},
+		{
+			"CtryCode": "AW",
+			"CtryName": "ARUBA",
+			"CrnCode": "AWG"
+		},
+		{
+			"CtryCode": "AU",
+			"CtryName": "AUSTRALIA",
+			"CrnCode": "AUD"
+		},
+		{
+			"CtryCode": "AT",
+			"CtryName": "AUSTRIA",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "AZ",
+			"CtryName": "AZERBAIJAN",
+			"CrnCode": "AZN"
+		},
+		{
+			"CtryCode": "BS",
+			"CtryName": "BAHAMAS",
+			"CrnCode": "BSD"
+		},
+		{
+			"CtryCode": "BH",
+			"CtryName": "BAHRAIN",
+			"CrnCode": "BHD"
+		},
+		{
+			"CtryCode": "BD",
+			"CtryName": "BANGLADESH",
+			"CrnCode": "BDT"
+		},
+		{
+			"CtryCode": "BB",
+			"CtryName": "BARBADOS",
+			"CrnCode": "BBD"
+		},
+		{
+			"CtryCode": "BY",
+			"CtryName": "BELARUS",
+			"CrnCode": "BYR"
+		},
+		{
+			"CtryCode": "BE",
+			"CtryName": "BELGIUM",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "BZ",
+			"CtryName": "BELIZE",
+			"CrnCode": "BZD"
+		},
+		{
+			"CtryCode": "BJ",
+			"CtryName": "BENIN",
+			"CrnCode": "XOF"
+		},
+		{
+			"CtryCode": "BM",
+			"CtryName": "BERMUDA",
+			"CrnCode": "BMD"
+		},
+		{
+			"CtryCode": "BT",
+			"CtryName": "BHUTAN",
+			"CrnCode": "BTN"
+		},
+		{
+			"CtryCode": "BT",
+			"CtryName": "BHUTAN",
+			"CrnCode": "INR"
+		},
+		{
+			"CtryCode": "BO",
+			"CtryName": "BOLIVIA",
+			"CrnCode": "BOB"
+		},
+		{
+			"CtryCode": "BQ",
+			"CtryName": "BONAIRE, SAINT EUSTATIUS AND SABA",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "BA",
+			"CtryName": "BOSNIA AND HERZEGOVINA",
+			"CrnCode": "BAM"
+		},
+		{
+			"CtryCode": "BW",
+			"CtryName": "BOTSWANA",
+			"CrnCode": "BWP"
+		},
+		{
+			"CtryCode": "BV",
+			"CtryName": "BOUVET ISLAND",
+			"CrnCode": "NOK"
+		},
+		{
+			"CtryCode": "BR",
+			"CtryName": "BRAZIL",
+			"CrnCode": "BRL"
+		},
+		{
+			"CtryCode": "IO",
+			"CtryName": "BRITISH INDIAN OCEAN TERRITORY",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "BN",
+			"CtryName": "BRUNEI DARUSSALAM",
+			"CrnCode": "BND"
+		},
+		{
+			"CtryCode": "BG",
+			"CtryName": "BULGARIA",
+			"CrnCode": "BGN"
+		},
+		{
+			"CtryCode": "BF",
+			"CtryName": "BURKINA FASO",
+			"CrnCode": "XOF"
+		},
+		{
+			"CtryCode": "BI",
+			"CtryName": "BURUNDI",
+			"CrnCode": "BIF"
+		},
+		{
+			"CtryCode": "KH",
+			"CtryName": "CAMBODIA",
+			"CrnCode": "KHR"
+		},
+		{
+			"CtryCode": "CM",
+			"CtryName": "CAMEROON",
+			"CrnCode": "XAF"
+		},
+		{
+			"CtryCode": "CA",
+			"CtryName": "CANADA",
+			"CrnCode": "CAD"
+		},
+		{
+			"CtryCode": "CV",
+			"CtryName": "CAPE VERDE",
+			"CrnCode": "CVE"
+		},
+		{
+			"CtryCode": "KY",
+			"CtryName": "CAYMAN ISLANDS",
+			"CrnCode": "KYD"
+		},
+		{
+			"CtryCode": "CF",
+			"CtryName": "CENTRAL AFRICAN REPUBLIC",
+			"CrnCode": "XAF"
+		},
+		{
+			"CtryCode": "TD",
+			"CtryName": "CHAD",
+			"CrnCode": "XAF"
+		},
+		{
+			"CtryCode": "CL",
+			"CtryName": "CHILE",
+			"CrnCode": "CLP"
+		},
+		{
+			"CtryCode": "CN",
+			"CtryName": "CHINA",
+			"CrnCode": "CNY"
+		},
+		{
+			"CtryCode": "CX",
+			"CtryName": "CHRISTMAS ISLAND",
+			"CrnCode": "AUD"
+		},
+		{
+			"CtryCode": "CC",
+			"CtryName": "COCOS (KEELING) ISLANDS",
+			"CrnCode": "AUD"
+		},
+		{
+			"CtryCode": "CO",
+			"CtryName": "COLOMBIA",
+			"CrnCode": "COP"
+		},
+		{
+			"CtryCode": "KM",
+			"CtryName": "COMOROS",
+			"CrnCode": "KMF"
+		},
+		{
+			"CtryCode": "CD",
+			"CtryName": "CONGO, Democratic Republic of",
+			"CrnCode": "CDF"
+		},
+		{
+			"CtryCode": "CG",
+			"CtryName": "CONGO, People's Republic of",
+			"CrnCode": "XAF"
+		},
+		{
+			"CtryCode": "CK",
+			"CtryName": "COOK ISLANDS",
+			"CrnCode": "NZD"
+		},
+		{
+			"CtryCode": "CR",
+			"CtryName": "COSTA RICA",
+			"CrnCode": "CRC"
+		},
+		{
+			"CtryCode": "CI",
+			"CtryName": "COTE D'IVOIRE",
+			"CrnCode": "XOF"
+		},
+		{
+			"CtryCode": "HR",
+			"CtryName": "CROATIA (local name: Hrvatska)",
+			"CrnCode": "HRK"
+		},
+		{
+			"CtryCode": "CU",
+			"CtryName": "CUBA",
+			"CrnCode": "CUP"
+		},
+		{
+			"CtryCode": "CW",
+			"CtryName": "CURA�AO",
+			"CrnCode": "ANG"
+		},
+		{
+			"CtryCode": "CY",
+			"CtryName": "CYPRUS",
+			"CrnCode": "CYP"
+		},
+		{
+			"CtryCode": "CZ",
+			"CtryName": "CZECH REPUBLIC",
+			"CrnCode": "CZK"
+		},
+		{
+			"CtryCode": "DK",
+			"CtryName": "DENMARK",
+			"CrnCode": "DKK"
+		},
+		{
+			"CtryCode": "DJ",
+			"CtryName": "DJIBOUTI",
+			"CrnCode": "DJF"
+		},
+		{
+			"CtryCode": "DM",
+			"CtryName": "DOMINICA",
+			"CrnCode": "XCD"
+		},
+		{
+			"CtryCode": "DO",
+			"CtryName": "DOMINICAN REPUBLIC",
+			"CrnCode": "DOP"
+		},
+		{
+			"CtryCode": "EC",
+			"CtryName": "ECUADOR",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "EG",
+			"CtryName": "EGYPT",
+			"CrnCode": "EGP"
+		},
+		{
+			"CtryCode": "SV",
+			"CtryName": "EL SALVADOR",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "SV",
+			"CtryName": "EL SALVADOR",
+			"CrnCode": ""
+		},
+		{
+			"CtryCode": "GQ",
+			"CtryName": "EQUATORIAL GUINEA",
+			"CrnCode": "XAF"
+		},
+		{
+			"CtryCode": "ER",
+			"CtryName": "ERITREA",
+			"CrnCode": "ERN"
+		},
+		{
+			"CtryCode": "EE",
+			"CtryName": "ESTONIA",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "ET",
+			"CtryName": "ETHIOPIA",
+			"CrnCode": "ETB"
+		},
+		{
+			"CtryCode": "FO",
+			"CtryName": "FAEROE ISLANDS",
+			"CrnCode": "DKK"
+		},
+		{
+			"CtryCode": "FK",
+			"CtryName": "FALKLAND ISLANDS (MALVINAS)",
+			"CrnCode": "FKP"
+		},
+		{
+			"CtryCode": "FJ",
+			"CtryName": "FIJI",
+			"CrnCode": "FJD"
+		},
+		{
+			"CtryCode": "FI",
+			"CtryName": "FINLAND",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "FR",
+			"CtryName": "FRANCE",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "GF",
+			"CtryName": "FRENCH GUIANA",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "PF",
+			"CtryName": "FRENCH POLYNESIA",
+			"CrnCode": "XPF"
+		},
+		{
+			"CtryCode": "TF",
+			"CtryName": "FRENCH SOUTHERN TERRITORIES",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "GA",
+			"CtryName": "GABON",
+			"CrnCode": "XAF"
+		},
+		{
+			"CtryCode": "GM",
+			"CtryName": "GAMBIA",
+			"CrnCode": "GMD"
+		},
+		{
+			"CtryCode": "GE",
+			"CtryName": "GEORGIA",
+			"CrnCode": "GEL"
+		},
+		{
+			"CtryCode": "DE",
+			"CtryName": "GERMANY",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "GH",
+			"CtryName": "GHANA",
+			"CrnCode": "GHC"
+		},
+		{
+			"CtryCode": "GI",
+			"CtryName": "GIBRALTAR",
+			"CrnCode": "GIP"
+		},
+		{
+			"CtryCode": "GR",
+			"CtryName": "GREECE",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "GL",
+			"CtryName": "GREENLAND",
+			"CrnCode": "DKK"
+		},
+		{
+			"CtryCode": "GD",
+			"CtryName": "GRENADA",
+			"CrnCode": "XCD"
+		},
+		{
+			"CtryCode": "GP",
+			"CtryName": "GUADELOUPE",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "GU",
+			"CtryName": "GUAM",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "GT",
+			"CtryName": "GUATEMALA",
+			"CrnCode": "GTQ"
+		},
+		{
+			"CtryCode": "GG",
+			"CtryName": "GUERNSEY",
+			"CrnCode": "GBP"
+		},
+		{
+			"CtryCode": "GN",
+			"CtryName": "GUINEA",
+			"CrnCode": "GNF"
+		},
+		{
+			"CtryCode": "GW",
+			"CtryName": "GUINEA-BISSAU",
+			"CrnCode": "XOF"
+		},
+		{
+			"CtryCode": "GW",
+			"CtryName": "GUINEA-BISSAU",
+			"CrnCode": ""
+		},
+		{
+			"CtryCode": "GY",
+			"CtryName": "GUYANA",
+			"CrnCode": "GYD"
+		},
+		{
+			"CtryCode": "HT",
+			"CtryName": "HAITI",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "HT",
+			"CtryName": "HAITI",
+			"CrnCode": "HTG"
+		},
+		{
+			"CtryCode": "HM",
+			"CtryName": "HEARD AND MC DONALD ISLANDS",
+			"CrnCode": "AUD"
+		},
+		{
+			"CtryCode": "HN",
+			"CtryName": "HONDURAS",
+			"CrnCode": "HNL"
+		},
+		{
+			"CtryCode": "HK",
+			"CtryName": "HONG KONG",
+			"CrnCode": "HKD"
+		},
+		{
+			"CtryCode": "HU",
+			"CtryName": "HUNGARY",
+			"CrnCode": "HUF"
+		},
+		{
+			"CtryCode": "IS",
+			"CtryName": "ICELAND",
+			"CrnCode": "ISK"
+		},
+		{
+			"CtryCode": "IN",
+			"CtryName": "INDIA",
+			"CrnCode": "INR"
+		},
+		{
+			"CtryCode": "ID",
+			"CtryName": "INDONESIA",
+			"CrnCode": "IDR"
+		},
+		{
+			"CtryCode": "IR",
+			"CtryName": "IRAN (ISLAMIC REPUBLIC OF)",
+			"CrnCode": "IRR"
+		},
+		{
+			"CtryCode": "IQ",
+			"CtryName": "IRAQ",
+			"CrnCode": "IQD"
+		},
+		{
+			"CtryCode": "IE",
+			"CtryName": "IRELAND",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "IM",
+			"CtryName": "ISLE OF MAN",
+			"CrnCode": "GBP"
+		},
+		{
+			"CtryCode": "IL",
+			"CtryName": "ISRAEL",
+			"CrnCode": "ILS"
+		},
+		{
+			"CtryCode": "IT",
+			"CtryName": "ITALY",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "JM",
+			"CtryName": "JAMAICA",
+			"CrnCode": "JMD"
+		},
+		{
+			"CtryCode": "JP",
+			"CtryName": "JAPAN",
+			"CrnCode": "JPY"
+		},
+		{
+			"CtryCode": "JE",
+			"CtryName": "JERSEY",
+			"CrnCode": "GBP"
+		},
+		{
+			"CtryCode": "JO",
+			"CtryName": "JORDAN",
+			"CrnCode": "JOD"
+		},
+		{
+			"CtryCode": "KZ",
+			"CtryName": "KAZAKHSTAN",
+			"CrnCode": "KZT"
+		},
+		{
+			"CtryCode": "KE",
+			"CtryName": "KENYA",
+			"CrnCode": "KES"
+		},
+		{
+			"CtryCode": "KI",
+			"CtryName": "KIRIBATI",
+			"CrnCode": "AUD"
+		},
+		{
+			"CtryCode": "KP",
+			"CtryName": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF",
+			"CrnCode": "KPW"
+		},
+		{
+			"CtryCode": "KR",
+			"CtryName": "KOREA, REPUBLIC OF",
+			"CrnCode": "KRW"
+		},
+		{
+			"CtryCode": "KW",
+			"CtryName": "KUWAIT",
+			"CrnCode": "KWD"
+		},
+		{
+			"CtryCode": "KG",
+			"CtryName": "KYRGYZSTAN",
+			"CrnCode": "KGS"
+		},
+		{
+			"CtryCode": "LA",
+			"CtryName": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+			"CrnCode": "LAK"
+		},
+		{
+			"CtryCode": "LV",
+			"CtryName": "LATVIA",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "LB",
+			"CtryName": "LEBANON",
+			"CrnCode": "LBP"
+		},
+		{
+			"CtryCode": "LS",
+			"CtryName": "LESOTHO",
+			"CrnCode": "LSL"
+		},
+		{
+			"CtryCode": "LS",
+			"CtryName": "LESOTHO",
+			"CrnCode": "ZAR"
+		},
+		{
+			"CtryCode": "LR",
+			"CtryName": "LIBERIA",
+			"CrnCode": "LRD"
+		},
+		{
+			"CtryCode": "LY",
+			"CtryName": "LIBYA",
+			"CrnCode": "LYD"
+		},
+		{
+			"CtryCode": "LI",
+			"CtryName": "LIECHTENSTEIN",
+			"CrnCode": "CHF"
+		},
+		{
+			"CtryCode": "LT",
+			"CtryName": "LITHUANIA",
+			"CrnCode": "LTL"
+		},
+		{
+			"CtryCode": "LU",
+			"CtryName": "LUXEMBOURG",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "MO",
+			"CtryName": "MACAO",
+			"CrnCode": "MOP"
+		},
+		{
+			"CtryCode": "MK",
+			"CtryName": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF",
+			"CrnCode": "MKD"
+		},
+		{
+			"CtryCode": "MG",
+			"CtryName": "MADAGASCAR",
+			"CrnCode": "MGA"
+		},
+		{
+			"CtryCode": "MW",
+			"CtryName": "MALAWI",
+			"CrnCode": "MWK"
+		},
+		{
+			"CtryCode": "MY",
+			"CtryName": "MALAYSIA",
+			"CrnCode": "MYR"
+		},
+		{
+			"CtryCode": "MV",
+			"CtryName": "MALDIVES",
+			"CrnCode": "MVR"
+		},
+		{
+			"CtryCode": "ML",
+			"CtryName": "MALI",
+			"CrnCode": "XOF"
+		},
+		{
+			"CtryCode": "MT",
+			"CtryName": "MALTA",
+			"CrnCode": "MTL"
+		},
+		{
+			"CtryCode": "MH",
+			"CtryName": "MARSHALL ISLANDS",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "MQ",
+			"CtryName": "MARTINIQUE",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "MR",
+			"CtryName": "MAURITANIA",
+			"CrnCode": "MRO"
+		},
+		{
+			"CtryCode": "MU",
+			"CtryName": "MAURITIUS",
+			"CrnCode": "MUR"
+		},
+		{
+			"CtryCode": "YT",
+			"CtryName": "MAYOTTE",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "MX",
+			"CtryName": "MEXICO",
+			"CrnCode": "MXN"
+		},
+		{
+			"CtryCode": "FM",
+			"CtryName": "MICRONESIA, FEDERATED STATES OF",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "MD",
+			"CtryName": "MOLDOVA, REPUBLIC OF",
+			"CrnCode": "MDL"
+		},
+		{
+			"CtryCode": "MC",
+			"CtryName": "MONACO",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "MN",
+			"CtryName": "MONGOLIA",
+			"CrnCode": "MNT"
+		},
+		{
+			"CtryCode": "ME",
+			"CtryName": "MONTENEGRO",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "MS",
+			"CtryName": "MONTSERRAT",
+			"CrnCode": "XCD"
+		},
+		{
+			"CtryCode": "MA",
+			"CtryName": "MOROCCO",
+			"CrnCode": "MAD"
+		},
+		{
+			"CtryCode": "MZ",
+			"CtryName": "MOZAMBIQUE",
+			"CrnCode": "MZN"
+		},
+		{
+			"CtryCode": "MM",
+			"CtryName": "MYANMAR",
+			"CrnCode": "MMK"
+		},
+		{
+			"CtryCode": "NA",
+			"CtryName": "NAMIBIA",
+			"CrnCode": "NAD"
+		},
+		{
+			"CtryCode": "NA",
+			"CtryName": "NAMIBIA",
+			"CrnCode": "ZAR"
+		},
+		{
+			"CtryCode": "NR",
+			"CtryName": "NAURU",
+			"CrnCode": "AUD"
+		},
+		{
+			"CtryCode": "NP",
+			"CtryName": "NEPAL",
+			"CrnCode": "NPR"
+		},
+		{
+			"CtryCode": "NL",
+			"CtryName": "NETHERLANDS",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "NC",
+			"CtryName": "NEW CALEDONIA",
+			"CrnCode": "XPF"
+		},
+		{
+			"CtryCode": "NZ",
+			"CtryName": "NEW ZEALAND",
+			"CrnCode": "NZD"
+		},
+		{
+			"CtryCode": "NI",
+			"CtryName": "NICARAGUA",
+			"CrnCode": "NIO"
+		},
+		{
+			"CtryCode": "NE",
+			"CtryName": "NIGER",
+			"CrnCode": "XOF"
+		},
+		{
+			"CtryCode": "NG",
+			"CtryName": "NIGERIA",
+			"CrnCode": "NGN"
+		},
+		{
+			"CtryCode": "NU",
+			"CtryName": "NIUE",
+			"CrnCode": "NZD"
+		},
+		{
+			"CtryCode": "NF",
+			"CtryName": "NORFOLK ISLAND",
+			"CrnCode": "AUD"
+		},
+		{
+			"CtryCode": "MP",
+			"CtryName": "NORTHERN MARIANA ISLANDS",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "NO",
+			"CtryName": "NORWAY",
+			"CrnCode": "NOK"
+		},
+		{
+			"CtryCode": "OM",
+			"CtryName": "OMAN",
+			"CrnCode": "OMR"
+		},
+		{
+			"CtryCode": "PK",
+			"CtryName": "PAKISTAN",
+			"CrnCode": "PKR"
+		},
+		{
+			"CtryCode": "PW",
+			"CtryName": "PALAU",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "PS",
+			"CtryName": "PALESTINE",
+			"CrnCode": "ILS"
+		},
+		{
+			"CtryCode": "PA",
+			"CtryName": "PANAMA",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "PG",
+			"CtryName": "PAPUA NEW GUINEA",
+			"CrnCode": "PGK"
+		},
+		{
+			"CtryCode": "PY",
+			"CtryName": "PARAGUAY",
+			"CrnCode": "PYG"
+		},
+		{
+			"CtryCode": "PE",
+			"CtryName": "PERU",
+			"CrnCode": "PEN"
+		},
+		{
+			"CtryCode": "PH",
+			"CtryName": "PHILIPPINES",
+			"CrnCode": "PHP"
+		},
+		{
+			"CtryCode": "PN",
+			"CtryName": "PITCAIRN",
+			"CrnCode": "NZD"
+		},
+		{
+			"CtryCode": "PL",
+			"CtryName": "POLAND",
+			"CrnCode": "PLN"
+		},
+		{
+			"CtryCode": "PT",
+			"CtryName": "PORTUGAL",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "PR",
+			"CtryName": "PUERTO RICO",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "QA",
+			"CtryName": "QATAR",
+			"CrnCode": "QAR"
+		},
+		{
+			"CtryCode": "RE",
+			"CtryName": "REUNION",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "RO",
+			"CtryName": "ROMANIA",
+			"CrnCode": "RON"
+		},
+		{
+			"CtryCode": "RU",
+			"CtryName": "RUSSIAN FEDERATION",
+			"CrnCode": "RUB"
+		},
+		{
+			"CtryCode": "RW",
+			"CtryName": "RWANDA",
+			"CrnCode": "RWF"
+		},
+		{
+			"CtryCode": "BL",
+			"CtryName": "SAINT BARTH�LEMY",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "SH",
+			"CtryName": "SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA",
+			"CrnCode": "SHP"
+		},
+		{
+			"CtryCode": "KN",
+			"CtryName": "SAINT KITTS AND NEVIS",
+			"CrnCode": "XCD"
+		},
+		{
+			"CtryCode": "LC",
+			"CtryName": "SAINT LUCIA",
+			"CrnCode": "XCD"
+		},
+		{
+			"CtryCode": "MF",
+			"CtryName": "Saint Martin",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "VC",
+			"CtryName": "SAINT VINCENT AND THE GRENADINES",
+			"CrnCode": "XCD"
+		},
+		{
+			"CtryCode": "WS",
+			"CtryName": "SAMOA",
+			"CrnCode": "WST"
+		},
+		{
+			"CtryCode": "SM",
+			"CtryName": "SAN MARINO",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "ST",
+			"CtryName": "SAO TOME AND PRINCIPE",
+			"CrnCode": "STD"
+		},
+		{
+			"CtryCode": "SA",
+			"CtryName": "SAUDI ARABIA",
+			"CrnCode": "SAR"
+		},
+		{
+			"CtryCode": "SN",
+			"CtryName": "SENEGAL",
+			"CrnCode": "XOF"
+		},
+		{
+			"CtryCode": "RS",
+			"CtryName": "SERBIA",
+			"CrnCode": "RSD"
+		},
+		{
+			"CtryCode": "SC",
+			"CtryName": "SEYCHELLES",
+			"CrnCode": "SCR"
+		},
+		{
+			"CtryCode": "SL",
+			"CtryName": "SIERRA LEONE",
+			"CrnCode": "SLL"
+		},
+		{
+			"CtryCode": "SG",
+			"CtryName": "SINGAPORE",
+			"CrnCode": "SGD"
+		},
+		{
+			"CtryCode": "SX",
+			"CtryName": "SINT MAARTEN (DUTCH PART)",
+			"CrnCode": "ANG"
+		},
+		{
+			"CtryCode": "SK",
+			"CtryName": "SLOVAKIA (Slovak Republic)",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "SI",
+			"CtryName": "SLOVENIA",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "SB",
+			"CtryName": "SOLOMON ISLANDS",
+			"CrnCode": "SBD"
+		},
+		{
+			"CtryCode": "SO",
+			"CtryName": "SOMALIA",
+			"CrnCode": "SOS"
+		},
+		{
+			"CtryCode": "ZA",
+			"CtryName": "SOUTH AFRICA",
+			"CrnCode": "ZAR"
+		},
+		{
+			"CtryCode": "GS",
+			"CtryName": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
+			"CrnCode": ""
+		},
+		{
+			"CtryCode": "SS",
+			"CtryName": "SOUTH SUDAN",
+			"CrnCode": "SSP"
+		},
+		{
+			"CtryCode": "ES",
+			"CtryName": "SPAIN",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "LK",
+			"CtryName": "SRI LANKA",
+			"CrnCode": "LKR"
+		},
+		{
+			"CtryCode": "PM",
+			"CtryName": "ST. PIERRE AND MIQUELON",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "SD",
+			"CtryName": "SUDAN",
+			"CrnCode": "SDG"
+		},
+		{
+			"CtryCode": "SR",
+			"CtryName": "SURINAME",
+			"CrnCode": "SRD"
+		},
+		{
+			"CtryCode": "SJ",
+			"CtryName": "SVALBARD AND JAN MAYEN ISLANDS",
+			"CrnCode": "NOK"
+		},
+		{
+			"CtryCode": "SZ",
+			"CtryName": "SWAZILAND",
+			"CrnCode": "SZL"
+		},
+		{
+			"CtryCode": "SE",
+			"CtryName": "SWEDEN",
+			"CrnCode": "SEK"
+		},
+		{
+			"CtryCode": "CH",
+			"CtryName": "SWITZERLAND",
+			"CrnCode": "CHF"
+		},
+		{
+			"CtryCode": "SY",
+			"CtryName": "SYRIAN ARAB REPUBLIC",
+			"CrnCode": "SYP"
+		},
+		{
+			"CtryCode": "TW",
+			"CtryName": "TAIWAN, PROVINCE OF CHINA",
+			"CrnCode": "TWD"
+		},
+		{
+			"CtryCode": "TJ",
+			"CtryName": "TAJIKISTAN",
+			"CrnCode": "TJS"
+		},
+		{
+			"CtryCode": "TZ",
+			"CtryName": "TANZANIA, UNITED REPUBLIC OF",
+			"CrnCode": "TZS"
+		},
+		{
+			"CtryCode": "TH",
+			"CtryName": "THAILAND",
+			"CrnCode": "THB"
+		},
+		{
+			"CtryCode": "TL",
+			"CtryName": "TIMOR-LESTE",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "TG",
+			"CtryName": "TOGO",
+			"CrnCode": "XOF"
+		},
+		{
+			"CtryCode": "TK",
+			"CtryName": "TOKELAU",
+			"CrnCode": "NZD"
+		},
+		{
+			"CtryCode": "TO",
+			"CtryName": "TONGA",
+			"CrnCode": "TOP"
+		},
+		{
+			"CtryCode": "TT",
+			"CtryName": "TRINIDAD AND TOBAGO",
+			"CrnCode": "TTD"
+		},
+		{
+			"CtryCode": "TN",
+			"CtryName": "TUNISIA",
+			"CrnCode": "TND"
+		},
+		{
+			"CtryCode": "TR",
+			"CtryName": "TURKEY",
+			"CrnCode": "TRY"
+		},
+		{
+			"CtryCode": "TM",
+			"CtryName": "TURKMENISTAN",
+			"CrnCode": "TMT"
+		},
+		{
+			"CtryCode": "TC",
+			"CtryName": "TURKS AND CAICOS ISLANDS",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "TV",
+			"CtryName": "TUVALU",
+			"CrnCode": "AUD"
+		},
+		{
+			"CtryCode": "UG",
+			"CtryName": "UGANDA",
+			"CrnCode": "UGX"
+		},
+		{
+			"CtryCode": "UA",
+			"CtryName": "UKRAINE",
+			"CrnCode": "UAH"
+		},
+		{
+			"CtryCode": "AE",
+			"CtryName": "UNITED ARAB EMIRATES",
+			"CrnCode": "AED"
+		},
+		{
+			"CtryCode": "GB",
+			"CtryName": "UNITED KINGDOM",
+			"CrnCode": "GBP"
+		},
+		{
+			"CtryCode": "US",
+			"CtryName": "UNITED STATES",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "UM",
+			"CtryName": "UNITED STATES MINOR OUTLYING ISLANDS",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "UY",
+			"CtryName": "URUGUAY",
+			"CrnCode": "UYU"
+		},
+		{
+			"CtryCode": "UZ",
+			"CtryName": "UZBEKISTAN",
+			"CrnCode": "UZS"
+		},
+		{
+			"CtryCode": "VU",
+			"CtryName": "VANUATU",
+			"CrnCode": "VUV"
+		},
+		{
+			"CtryCode": "VA",
+			"CtryName": "VATICAN CITY STATE (HOLY SEE)",
+			"CrnCode": "EUR"
+		},
+		{
+			"CtryCode": "VE",
+			"CtryName": "VENEZUELA",
+			"CrnCode": "VEF"
+		},
+		{
+			"CtryCode": "VN",
+			"CtryName": "VIET NAM",
+			"CrnCode": "VND"
+		},
+		{
+			"CtryCode": "VG",
+			"CtryName": "VIRGIN ISLANDS (BRITISH)",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "VI",
+			"CtryName": "VIRGIN ISLANDS (U.S.)",
+			"CrnCode": "USD"
+		},
+		{
+			"CtryCode": "WF",
+			"CtryName": "WALLIS AND FUTUNA ISLANDS",
+			"CrnCode": "XPF"
+		},
+		{
+			"CtryCode": "EH",
+			"CtryName": "WESTERN SAHARA",
+			"CrnCode": "MAD"
+		},
+		{
+			"CtryCode": "YE",
+			"CtryName": "YEMEN",
+			"CrnCode": "YER"
+		},
+		{
+			"CtryCode": "ZM",
+			"CtryName": "ZAMBIA",
+			"CrnCode": "ZMW"
+		},
+		{
+			"CtryCode": "ZW",
+			"CtryName": "ZIMBABWE",
+			"CrnCode": "ZWL"
+		}]
+	},
+	"ReceiptTypes": {
+		"Records": [{
+			"Code": "N",
+			"Name": "No Receipt"
+		},
+		{
+			"Code": "R",
+			"Name": "Receipt"
+		},
+		{
+			"Code": "T",
+			"Name": "Tax Receipt"
+		}]
+	},
+	"ReviewPercentage": {
+		"Percent": "100"
+	},
+	"ExpenseEntry": {
+		"Body": {
+			"FormsDef": {
+				"37": {
+					"ExpName": {
+						"Id": "ExpName",
+						"Sequence": 1,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 64,
+						"DataType": "CHAR",
+						"Width": 32,
+						"Label": "Expense Type",
+						"Required": "Y",
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 457,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"TransactionDate": {
+						"Id": "TransactionDate",
+						"Sequence": 2,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"DataType": "TIMESTAMP",
+						"Width": 32,
+						"Label": "Transaction Date",
+						"Required": "Y",
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 458,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"CopyDownFormType": "ENTRYINFO",
+						"CopyDownSource": "TransactionDate",
+						"IsCopyDownSourceForOtherForms": "Y",
+						"ItemCopyDownAction": "P",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"Description": {
+						"Id": "Description",
+						"Sequence": 3,
+						"CtrlType": "textDiv",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 64,
+						"DataType": "VARCHAR",
+						"Width": 32,
+						"Label": "Business Purpose",
+						"Required": "N",
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 459,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"CopyDownFormType": "ENTRYINFO",
+						"CopyDownSource": "Description",
+						"IsCopyDownSourceForOtherForms": "Y",
+						"ItemCopyDownAction": "P",
+						"classStr": "cReadOnlyInput",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"VendorDescription": {
+						"Id": "VendorDescription",
+						"Sequence": 4,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 64,
+						"DataType": "VARCHAR",
+						"Width": 32,
+						"Label": "Vendor Description",
+						"Required": "N",
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 460,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"LocName": {
+						"Id": "LocName",
+						"Sequence": 5,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 64,
+						"DataType": "INTEGER",
+						"Width": 32,
+						"Label": "City",
+						"Required": "N",
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 461,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"CopyDownFormType": "ENTRYINFO",
+						"CopyDownSource": "LocName",
+						"IsCopyDownSourceForOtherForms": "Y",
+						"ItemCopyDownAction": "P",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"TransactionCurrencyName": {
+						"Id": "TransactionCurrencyName",
+						"Sequence": 6,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 64,
+						"DataType": "INTEGER",
+						"Width": 32,
+						"Label": "Currency",
+						"Required": "Y",
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 462,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"CopyDownFormType": "ENTRYINFO",
+						"CopyDownSource": "TransactionCurrencyName",
+						"IsCopyDownSourceForOtherForms": "Y",
+						"ItemCopyDownAction": "P",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"PatKey": {
+						"Id": "PatKey",
+						"Sequence": 7,
+						"CtrlType": "picklist",
+						"OriginalCtrlType": "picklist",
+						"MaxLength": 4,
+						"DataType": "CHAR",
+						"Label": "Payment Type",
+						"Required": "Y",
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 463,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"DefaultValue": "CASH",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"TransactionAmount": {
+						"Id": "TransactionAmount",
+						"Sequence": 8,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 23,
+						"DataType": "MONEY",
+						"Label": "Foreign Amount",
+						"Required": "Y",
+						"Access": "HD",
+						"OriginalAccess": "HD",
+						"FfKey": 464,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"PostedAmount": {
+						"Id": "PostedAmount",
+						"Sequence": 9,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 23,
+						"DataType": "MONEY",
+						"Width": 32,
+						"Label": "Amount",
+						"Required": "Y",
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 465,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"ExchangeRate": {
+						"Id": "ExchangeRate",
+						"Sequence": 10,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 23,
+						"DataType": "NUMERIC",
+						"Label": "Exchange Rate",
+						"Required": "Y",
+						"Access": "RO",
+						"OriginalAccess": "HD",
+						"FfKey": 466,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"CopyDownFormType": "ENTRYINFO",
+						"CopyDownSource": "ExchangeRate",
+						"IsCopyDownSourceForOtherForms": "Y",
+						"ItemCopyDownAction": "P",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"ReceiptReceived": {
+						"Id": "ReceiptReceived",
+						"Sequence": 11,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "picklist",
+						"MaxLength": 1,
+						"DataType": "BOOLEANCHAR",
+						"Label": "Reviewed",
+						"Required": "Y",
+						"Access": "HD",
+						"OriginalAccess": "HD",
+						"FfKey": 467,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"ForeignOrDomestic": {
+						"Id": "ForeignOrDomestic",
+						"Sequence": 12,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "picklist",
+						"MaxLength": 4,
+						"DataType": "CHAR",
+						"Label": "Foreign or Domestic",
+						"Required": "Y",
+						"Access": "HD",
+						"OriginalAccess": "HD",
+						"FfKey": 468,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"HasVat": {
+						"Id": "HasVat",
+						"Sequence": 13,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "checkbox",
+						"MaxLength": 1,
+						"DataType": "BOOLEANCHAR",
+						"Label": "Has VAT",
+						"Required": "Y",
+						"Access": "HD",
+						"OriginalAccess": "HD",
+						"FfKey": 469,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"VatTaxTotal": {
+						"Id": "VatTaxTotal",
+						"Sequence": 14,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 23,
+						"DataType": "MONEY",
+						"Label": "Tax Posted Amount",
+						"Required": "Y",
+						"Access": "RO",
+						"OriginalAccess": "RO",
+						"FfKey": 470,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"AdjustedAmount": {
+						"Id": "AdjustedAmount",
+						"Sequence": 15,
+						"CtrlType": "edit",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 23,
+						"DataType": "MONEY",
+						"Width": 32,
+						"Label": "Approved Amount",
+						"Required": "N",
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "HD",
+						"FfKey": 471,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"ApprovedAmount": {
+						"Id": "ApprovedAmount",
+						"Sequence": 16,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "edit",
+						"MaxLength": 23,
+						"DataType": "MONEY",
+						"Width": 32,
+						"Label": "Approved amount in GBP",
+						"Required": "Y",
+						"Cols": 32,
+						"Access": "HD",
+						"OriginalAccess": "HD",
+						"FfKey": 472,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"ReceiptType": {
+						"Id": "ReceiptType",
+						"Sequence": 17,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "picklist",
+						"MaxLength": 1,
+						"DataType": "CHAR",
+						"Label": "Receipt Status",
+						"Required": "Y",
+						"Access": "HD",
+						"OriginalAccess": "HD",
+						"FfKey": 473,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"ItemCopyDownAction": "P",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"Comment": {
+						"Id": "Comment",
+						"Sequence": 18,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "textarea",
+						"MaxLength": 500,
+						"DataType": "VARCHAR",
+						"Width": 32,
+						"Label": "Comment",
+						"Required": "N",
+						"Rows": 4,
+						"Cols": 32,
+						"Access": "HD",
+						"OriginalAccess": "RW",
+						"FfKey": 474,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"classStr": "cReadOnlyInput",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"TravelAllowance": {
+						"Id": "TravelAllowance",
+						"Sequence": 19,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "checkbox",
+						"MaxLength": 1,
+						"DataType": "BOOLEANCHAR",
+						"Label": "Travel Allowance",
+						"Required": "Y",
+						"Access": "HD",
+						"OriginalAccess": "RW",
+						"FfKey": 475,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"IsPersonal": {
+						"Id": "IsPersonal",
+						"Sequence": 20,
+						"CtrlType": "checkbox",
+						"OriginalCtrlType": "checkbox",
+						"MaxLength": 1,
+						"DataType": "BOOLEANCHAR",
+						"Label": "Personal Expense  (do not reimburse)",
+						"Required": "Y",
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 476,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"Attendees": {
+						"Id": "Attendees",
+						"Sequence": 21,
+						"CtrlType": "textDiv",
+						"OriginalCtrlType": "textarea",
+						"MaxLength": 160000,
+						"DataType": "VARCHAR",
+						"Width": 32,
+						"Label": "Attendees",
+						"Required": "N",
+						"Rows": 5,
+						"Cols": 32,
+						"Access": "RO",
+						"OriginalAccess": "RW",
+						"FfKey": 477,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"classStr": "cReadOnlyInput",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"Allocations": {
+						"Id": "Allocations",
+						"Sequence": 22,
+						"CtrlType": "hidden",
+						"OriginalCtrlType": "textarea",
+						"MaxLength": 8000,
+						"DataType": "VARCHAR",
+						"Width": 32,
+						"Label": "Allocations",
+						"Required": "N",
+						"Rows": 3,
+						"Cols": 32,
+						"Access": "HD",
+						"OriginalAccess": "RW",
+						"FfKey": 478,
+						"FtCode": "ENTRYINFO",
+						"Custom": "N",
+						"HasLineSeparator": "N",
+						"HiddenIfEmptyr": "N",
+						"IsDynamicFieldr": "N",
+						"spanRow": false,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					},
+					"PrevComment": {
+						"Id": "PrevComment",
+						"Sequence": -99,
+						"CtrlType": "textDiv",
+						"Label": "Previous Comment",
+						"Required": "N",
+						"Access": "RO",
+						"classStr": "cooltable",
+						"spanRow": true,
+						"IsListManaged": false,
+						"IsCCToEntryMapping": false
+					}
+				}
+			},
+			"Expense": {
+				"TravelAllowance": "N",
+				"RptKey": "nuwF6znuIdyEHowUC2kmX27w$s",
+				"TransactionDate": "2014-07-07 00:00:00.0",
+				"ExceptionMaxLevel": 0,
+				"IsClearedExceptions": "Y",
+				"ExpName": "Dinner",
+				"ApprovedAmount": 57.00000000,
+				"RpeKey": "nznqTLw2h83aCnakEbMwHm17p",
+				"TransactionCurrencyName": "UK, Pound Sterling",
+				"TotalTaxPostedAmount": 0.00000000,
+				"PatKey": "CASH",
+				"ImageRequired": "Y",
+				"ExceptionCount": 0,
+				"HasExceptions": "N",
+				"PostedAmount": 57.00000000,
+				"TransactionType": "REG",
+				"CrnKey": 3,
+				"HasMobileReceipt": "N",
+				"TransactionAmount": 57.00000000,
+				"ReceiptImageId": "receipt3.jpg",
+				"AttendeeCount": 0,
+				"HasVat": "N",
+				"NetAdjustedTaxAmount": 57.00000000,
+				"ForeignOrDomestic": "HOME",
+				"ExchangeRateDirection": "M",
+				"LastModified": "2014-07-09 09:17:14.0",
+				"IsBillable": "N",
+				"NetReclaimAmount": 57.00000000,
+				"FormKey": 37,
+				"ExcludeFromCa": "N",
+				"TotalTaxAdjustedAmount": 0.00000000,
+				"ReceiptTypeName": "Receipt",
+				"HasAffidavit": "N",
+				"AdjustedAmount": 57.00000000,
+				"CcLocationResolved": "Y",
+				"ExpCode": "MEALS",
+				"ReceiptReceived": "N",
+				"ExchangeRate": 1.00000000000000,
+				"CrnCode": "GBP",
+				"TotalReclaimPostedAmount": 0.00000000,
+				"ExpKey": "DINNR",
+				"TotalReclaimAdjustedAmount": 0.00000000,
+				"ReceiptType": "R",
+				"NetReclaimAdjustedAmount": 57.00000000,
+				"PatName": "Cash",
+				"CommentCount": 0,
+				"NetTaxAmount": 57.00000000,
+				"IsPersonal": "N",
+				"ReceiptRequired": "N",
+				"ClaimedAmount": 57.00000000,
+				"AllocationState": "N"
+			}
+		}
+	},
+	"ExpenseEntry_GetReportEntryTaxesForCAW": {
+		"Body": {
+			"ReportEntryTaxes": ""
+		}
+	},
+	"ExpenseEntry_GetReportEntryTaxFormsForCAW": {
+		"Body": {
+			"ReportEntryTaxes": ""
+		}
+	}
+}
