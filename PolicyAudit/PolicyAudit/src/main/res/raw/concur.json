@@ -1636,7 +1636,1011 @@
 						}]
 					}],
 					"IsAuditable": true
-				}],
+				},
+				{
+					"ApprovedAmount": "56.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Team Building Event",
+					"ExpKey": "MEALI",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nzntmUmIyhjYvMKu3klRrhgAj",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-07-07",
+					"RequestAmountPosted": "256.00000000",
+					"RequestAmountTransaction": "56.00000000",
+					"ImageID": "receipt4.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier details?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				},
+				
+				{
+					"ApprovedAmount": "3456.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Airfare & Car Parking",
+					"ExpKey": "MEALI",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nzntmUmIyhjYvMKu3klRrhgAj",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-07-07",
+					"RequestAmountPosted": "3456.00000000",
+					"RequestAmountTransaction": "56.00000000",
+					"ImageID": "receipt4.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier details?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				},
+				
+				{
+					"ApprovedAmount": "3456.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Laptop and Monitors",
+					"ExpKey": "MEALI",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nzntmUmIyhjYvMKu3klRrhgAj",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-07-07",
+					"RequestAmountPosted": "12000.00000000",
+					"RequestAmountTransaction": "56.00000000",
+					"ImageID": "receipt4.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier details?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				},
+				
+				{
+					"ApprovedAmount": "9817.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Office Furniture",
+					"ExpKey": "MEALI",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nzntmUmIyhjYvMKu3klRrhgAj",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-07-07",
+					"RequestAmountPosted": "9817.00000000",
+					"RequestAmountTransaction": "56.00000000",
+					"ImageID": "receipt4.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier details?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				},
+				
+				{
+					"ApprovedAmount": "1920.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Hotel Room Rent",
+					"ExpKey": "MEALI",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nzntmUmIyhjYvMKu3klRrhgAj",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-07-07",
+					"RequestAmountPosted": "1920.00000000",
+					"RequestAmountTransaction": "56.00000000",
+					"ImageID": "receipt4.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier details?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				},
+				
+				{
+					"ApprovedAmount": "1920.00000000",
+					"CrnKey": 3,
+					"ExpDesc": "Tip",
+					"ExpKey": "MEALI",
+					"ExpCode": "",
+					"FormKey": 37,
+					"HasAttendees": "N",
+					"HasComments": "N",
+					"ImageRequired": true,
+					"IsTransactionForeign": false,
+					"RpeKey": "nzntmUmIyhjYvMKu3klRrhgAj",
+					"Personal": false,
+					"ReceiptExists": true,
+					"ReceiptRequired": false,
+					"ParentOrChild": "parent",
+					"TransactionDate": "2014-07-07",
+					"RequestAmountPosted": "500.00000000",
+					"RequestAmountTransaction": "56.00000000",
+					"ImageID": "receipt4.jpg",
+					"HasAffidavit": "N",
+					"IsSplitable": false,
+					"Selectable": true,
+					"Status": 0,
+					"TripId": "",
+					"SegmentId": "",
+					"SegmentTypeKey": "",
+					"_relationshipSortId": 0,
+					"Questions": [
+					{
+						"id": 63,
+						"question": "Is the value correct?",
+						"control": "DROP",
+						"sequenceNumber": 2,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "IMUV",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Information missing - Unable to Validate",
+							"comment": "The  receipt does not cover / show the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'.%expensetype% , %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NMFR",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "No - Mixed Fuel Receipt",
+							"comment": "Only the Fuel amount of the receipt must be entered. Please correct the amount and resubmit. %expensetype%, %expenseamount%,  %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "NOXX",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "NO",
+							"comment": "The amount of the receipt does not cover the amount claimed on the report. Please correct amount and resubmit, or provide additional receipts to cover the claim value. If an element of the claim is un-receipted please submit this element separately, selecting 'No receipt'. %expensetype% for %expenseamount%, %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 13
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 64,
+						"question": "Does the Receipt show the supplier details?",
+						"control": "DROP",
+						"sequenceNumber": 3,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NCSP",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Credit card slip provided"
+						},
+						{
+							"answerId": "NONV",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Other Non VAT (E.g. Pro-forma)"
+						},
+						{
+							"answerId": "RTIL",
+							"state": "FAIL",
+							"severityLevel": 2,
+							"displayText": "Receipt illegible",
+							"comment": "The receipt is not legible. Please provide a more legible copy of this receipt and resubmit. %expensetype% for %expenseamount% on %expensedate%",
+							"reasonCodes": [{
+								"ReasonCodeKey": 2
+							}]
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					},
+					{
+						"id": 66,
+						"question": "Is the VAT number correct?",
+						"control": "FILD",
+						"sequenceNumber": 5,
+						"questionLevel": "L",
+						"resultId": "",
+						"metaKey": 3961,
+						"EditFieldInfo": {
+							"Id": "Custom2",
+							"CtrlType": "edit",
+							"DataType": "VARCHAR",
+							"Label": "Custom2"
+						},
+						"fieldObjectMetadataTableRef": "CT_REPORT_ENTRY_TAX_FORM"
+					},
+					
+					{
+						"id": 73,
+						"question": "Is a discretional tip included?",
+						"control": "DROP",
+						"sequenceNumber": 13,
+						"questionLevel": "L",
+						"resultId": "",
+						"possibleanswers": [{
+							"answerId": "NAXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "Not Applicable"
+						},
+						{
+							"answerId": "NOXX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "NO"
+						},
+						{
+							"answerId": "YESX",
+							"state": "PASS",
+							"severityLevel": 1,
+							"displayText": "YES"
+						}]
+					}],
+					"IsAuditable": true
+				}
+				
+				
+				],
 				"RuleLog": [{
 					"Rule": 2000001,
 					"Execution": "2014-Jul-09 09:17:50"
